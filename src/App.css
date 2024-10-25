@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #232323;
+}
+
+.orange {
+  color: #ff5e14;
+
+}
+
+.bg-gray {
+  background-color: #F7F9FB;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitle {
+  padding-top: 10px;
+  font-size: 15px;
+  color: #494949;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+
+.header .logo {
+  max-width: 180px;
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-weight: 500;
+  font-size: larger;
+  margin-left: 10px;
+}
+
+.header .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #ff5e14;
+}
+
+.banner {
+  background-image: url('./assets/banner.avif');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.banner h1 {
+  font-size: 55px;
+  color: white;
+  font-weight: 600;
+}
+
+.banner p {
+  color: white;
+}
+
+.banner .bannerbtn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 3px 15px;
+  color: white;
+}
+
+.banner .bannerbtn:hover {
+  background-color: #ff5e14;
+}
+
+/* service */
+.service .servicebox {
+  padding: 50px 30px;
+  background: #fff;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.service .servicebox img {
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.service .servicedinheading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.service p {
+  color: #6f6f6f;
+}
+
+
+
+/* actionbox */
+.actionbox {
+  background-image: url(./assets/actionbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 1;
+  /* padding-top: 80px;
+    padding-bottom: 80px; */
+}
+
+.actionbox.overlay-black-dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.actionbox .actionboxheading {
+  margin-top: 0;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 80px;
+  margin-bottom: 40px;
+}
+
+.actionbox .number {
+  font-size: 35px;
+  line-height: 45px;
+  margin-bottom: 0;
+  font-weight: 500;
+  margin-top: 0;
+  color: #ff5e14;
+  padding-right: 40px;
+  border-right: 3px solid;
+  border-color: #ff5e14;
+}
+
+.actionbox .button {
+  padding-left: 40px;
+}
+
+.actionbox button {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px 33px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff5e14;
+  color: white;
+}
+
+.actionbox .rightcol img {
+  margin-top: -19px;
+}
+
+/* team */
+.team .leftcol .w-100 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.team .leftcol .content {
+  position: absolute;
+  bottom: 0px;
+  background: #fff;
+  width: 100%;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.team .leftcol .content::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+}
+
+.team .leftcol .content .contenttitle {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.team .leftcol .content .contentsubtitle {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ff5e14;
+}
+
+/*product */
+.product {
+  background-image: url(./assets/productbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.product.overlay-black-dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.product .playbtn {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #ff5e14;
+  display: inline-block;
+  border-radius: 70px;
+  color: #fff;
+  font-size: 22px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.product .playbtn img {
+  height: 37px;
+}
+
+.product .text {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+
+}
+
+.product h2 {
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.product .rightcol .rightcolinner {
+  padding: 50px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+.product .rightcol .rightcolinner img {
+  height: 80px;
+}
+
+.product .rightcol .rightcolinner .line {
+  display: inline-block;
+  height: 2px;
+  width: 80px;
+  margin-top: 33px;
+  margin-bottom: 22px;
+  position: relative;
+  background-color: #ff5e14;
+}
+
+.product .rightcol .rightcolinner .content h2 {
+  font-size: 60px !important;
+  line-height: 60px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+}
+
+.product .rightcol .rightcolinner .content p {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+
+.testimonial {
+  background-image: url(./assets/testimonialbg.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.testimonial .title,
+.testimonial .subtitle {
+  color: white;
+}
+
+.testimonial .para {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: white;
+  text-align: justify;
+
+}
+.testimonial .testimonialbox::after{
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: -1px;
+  background: #fff;
+  top: 0;
+  opacity: 0.2;
+}
+.testimonial .testimonialbox .icon {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+
+}
+
+.testimonial .testimonialbox .text {
+  margin-top: 16px;
+}
+
+.testimonial .testimonialbox .text .openquotes {
+  top: 7px;
+  font-size: 30px;
+  left: 7px;
+}
+
+.testimonial .testimonialbox .text .closequotes {
+  bottom: 32%;
+  font-size: 30px;
+  right: 7px;
+}
+
+.testimonial .testimonialbox .icon .test-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.testimonial .testimonialbox .text .textheading {
+  color: white;
+  margin-left: 15px;
+}
+
+.testimonial .testimonialbox .text .textpara {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 15px;
+}
+.features img{
+  height: 100px;
+}
+.features .previous{
+  left: -69px;
+  position: absolute;
+  top: 33%;
+  background-color: white;
+}
+.features .next{
+  right: -31px;
+  position: absolute;
+  top: 33%;
+  background-color: white;
+}
+.features .previousarrow, 
+.features .nextarrow {
+  font-size: 30px;
+  color: #00000033;
+}
+.features .previousarrow:hover, 
+.features .nextarrow:hover {
+  font-size: 30px;
+  color: black;
+}
+
