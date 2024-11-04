@@ -324,7 +324,7 @@ h6 {
 
 .testimonial {
   background-image: url(./assets/testimonialbg.png);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000;
@@ -345,7 +345,8 @@ h6 {
   text-align: justify;
 
 }
-.testimonial .testimonialbox::after{
+
+.testimonial .testimonialbox::after {
   content: "";
   width: 1px;
   height: 100%;
@@ -355,6 +356,7 @@ h6 {
   top: 0;
   opacity: 0.2;
 }
+
 .testimonial .testimonialbox .icon {
   height: 70px;
   width: 70px;
@@ -395,29 +397,33 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
   margin-left: 15px;
 }
-.features img{
+
+.features img {
   height: 100px;
 }
-.features .previous{
+
+.features .previous {
   left: -69px;
   position: absolute;
   top: 33%;
   background-color: white;
 }
-.features .next{
+
+.features .next {
   right: -31px;
   position: absolute;
   top: 33%;
   background-color: white;
 }
-.features .previousarrow, 
+
+.features .previousarrow,
 .features .nextarrow {
   font-size: 30px;
   color: #00000033;
 }
-.features .previousarrow:hover, 
+
+.features .previousarrow:hover,
 .features .nextarrow:hover {
   font-size: 30px;
   color: black;
 }
-
